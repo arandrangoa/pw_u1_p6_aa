@@ -1,0 +1,51 @@
+/*selecciona los elelementos de menu y luego de li que es el hijo*/
+/*combinacion jerarquica*/
+.menu li {
+    list-style: none;
+    display: inline-block;
+    /*margin: 10px; /*aplica a los 4 lados*/
+    margin: 5px 15px; /*el primer numero aplica arriba y abajo, el segundo digito derecha e izquierda 
+    /*margin: 10px 20px 30px 40px; /*los 4 numeros comienza de arriba el primero y luego va en sentido horario
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 40px;
+    Esto aplica tanto para el margin, border y padding*/
+    border: 1px dashed black;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.menu {
+background:  #33e24b  ;
+padding: 5px 15px;
+text-align: left;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+
+/*combinacion por selector*/
+/*
+.menu, li {
+
+}
+
+.menu {
+color: red;
+}
+
+li {
+    color: red;
+    background-color: black;
+}*/

@@ -1,0 +1,28 @@
+/*Estrcutura de un css
+/*selector {
+    declaracion1;
+    declaracion2;
+    estructura de una declaracion
+    propiedad:valor
+    .
+    .
+    .
+    declaracionn;
+}*/
+
+ h1 {
+            color: blueviolet;
+            background: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+
+        .clasemedia {
+            color: brown;
+            background-color: yellow;
+        }
+        .clasealta {
+            color: aqua;
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
