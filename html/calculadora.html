@@ -7,6 +7,22 @@
 
     <script>
         function cambiarTexto(idElemento){
+            document.getElementById(idElemento).style.background="yellow";
+            document.getElementById(idElemento).style.fontSize="30px";
+        }
+
+        function sumar(numero1, numero2){
+            var total=numero1+numero2;
+            console.log(total)
+
+        }
+
+        function sumarCompleto(numero1, numero2){
+            var num1=parseInt( document.getElementById('idnumero1').value);
+            var num2=parseInt(document.getElementById('idnumero2').value);
+
+            var total=num1+num2;
+            console.log(total)
 
         }
 
@@ -27,6 +43,16 @@
 
         <button onclick="document.getElementById('idlabelnumero1').style.color='blue'" >Cambiar color</button>
         <button onclick="document.getElementById('idlabelnumero1').style.fontSize='30px'" >Cambiar tamaño</button>
+    
+        <button onclick="cambiarTexto('idlabelnumero1')" >Cambiar Numero 1</button>
+        <button onclick="cambiarTexto('idlabelnumero2')" >Cambiar NUmero 2</button>
+    
+        <button onclick="sumar(document.getElementById('idnumero1').value,document.getElementById('idnumero2'))" >Sumar</button>
+        <button onclick="sumarCompleto()" >Sumar completo</button>
+    
+
+    
+    
     </section>
     <footer></footer>
 </body>
