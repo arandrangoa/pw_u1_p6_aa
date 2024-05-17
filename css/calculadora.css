@@ -1,0 +1,74 @@
+.container {
+    /*esta propiedad si es fija apra mi container*/
+    display: flex;
+    /*El valor de esta propiedad no es fija, la propiedad si es fija*/
+    /*estos dos dan una orientacion a mi container*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculadora {
+    /*Esta propiedad grid, a todos los elementos que estan en una lista seguida los prepapara para
+    que sean desplegados o visualizados como una grilla(cuadricula)*/
+    /*Luego con otra propiedad o estilo pondremos como van a aestar distribuidos en la grilla*/
+    display: grid;
+    /*Esta propiedad dice cuantas columnas va a tener la grilla*/
+    /*grid-template-columns: 75px 75px 75px 75px;*/
+    /*la linea de abajo es exactamente igual que la de arriba*/
+    grid-template-columns: repeat(4, 75px);
+    /*No se lo dice de manera explicita, sino de implicita, porque puse 3 tamnaños de cada columna*/
+
+    /*Esta propiedad dice cuantas filas va a tener la grilla*/
+    /*grid-template-rows: 150px 75px 75px 75px 75px 75px;*/
+    /*la linea de abajo es exactamente igual que la de arriba*/
+    grid-template-rows: 150px repeat(5, 75px);
+    background: #94e062;
+    padding: 15px;
+    border-radius: 35px;
+
+    /*recibe cuatro argumentos para la sombra, porque puede ser arriba abajo izquierda o derecha*/
+    box-shadow: 15px 10px 5px 5px #00000033;
+
+}
+
+.display {
+    /*para que el display ocupe en la grilla el tamanio que tiene la grilla*/
+    grid-column: span 4;
+    background: #314c38;
+    padding: 15px;
+    border-radius: 35px;
+    text-align: right;
+    margin: 10px 10px 20px 10px;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+button {
+    /*Me pone un puntero al momento de pasar por el boton*/
+    cursor: pointer;
+    /*Me da un espacio entre elementos, en este caso botones*/
+    margin: 5px;
+    border-radius: 32px;
+    border: none;
+    background: #b2b80c;
+    font-size: 25px;
+    box-shadow: 5px 5px 5px 5px #00000033;
+}
+
+/*estilo tipo seudo clase para cuando se de click del botoon cambie de color*/
+button:active{
+    background: #2020d2;
+}
+
+/*Estilo universal*/
+*{
+color: white;
+}
+
+body {
+    background: #7178cf;
+}
