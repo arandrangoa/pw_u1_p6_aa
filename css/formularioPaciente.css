@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background: #59ABE3;
+}
+/*Con este elemento le digo a p epecificamente el type se muestre*/
+p:before{
+    content: attr(type);
+    display: block;
+    margin: 3px 2px;
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+input {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid #bebed2;
+    background: none;
+}
+
+/*Con esto cuando se pone encima del input se aclara la linea o del color que se necesita*/
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #78788c;
+}
+
+h2 {
+    margin: 10px 2px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+}
+
+.form {
+    width: 350px;
+    height: 380px;
+    background: rgb(163, 158, 158);
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 0 0 40px 5px rgb(80, 78, 78);
+    }
