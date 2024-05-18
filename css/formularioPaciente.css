@@ -4,11 +4,12 @@
     align-items: center;
 }
 
-body{
+body {
     background: #59ABE3;
 }
+
 /*Con este elemento le digo a p epecificamente el type se muestre*/
-p:before{
+p:before {
     content: attr(type);
     display: block;
     margin: 3px 2px;
@@ -39,8 +40,24 @@ h2 {
 .form {
     width: 350px;
     height: 380px;
-    background: rgb(163, 158, 158);
+    background: rgb(242, 234, 234);
     border-radius: 10px;
     padding: 25px 35px;
     box-shadow: 0 0 40px 5px rgb(80, 78, 78);
-    }
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #78788c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}

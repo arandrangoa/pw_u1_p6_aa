@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/calculadoraCompleta.js"></script>
 </head>
 
 <body>
@@ -14,28 +15,25 @@
     <section>
         <div class="container">
             <div class="calculadora">
-                <div class="display">98x9</div>
-                <button class="col-2">C</button>
-                
-                <button>&larr;</button>
-                <button>/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>X</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button class="col-2">0</button>
-                <button>.</button>
-                <button>=</button>
-            
-               
+                <div id="display" class="display"></div>
+                <button class="col-2" onclick="limpiarDisplay()">C</button>
+                <button onclick="borrarUlitmo()">←</button>
+                <button onclick="agregarOperador('/')">/</button>
+                <button onclick="agregarNumero(7)">7</button>
+                <button onclick="agregarNumero(8)">8</button>
+                <button onclick="agregarNumero(9)">9</button>
+                <button onclick="agregarOperador('*')">X</button>
+                <button onclick="agregarNumero(4)">4</button>
+                <button onclick="agregarNumero(5)">5</button>
+                <button onclick="agregarNumero(6)">6</button>
+                <button onclick="agregarOperador('-')">-</button>
+                <button onclick="agregarNumero(1)">1</button>
+                <button onclick="agregarNumero(2)">2</button>
+                <button onclick="agregarNumero(3)">3</button>
+                <button onclick="agregarOperador('+')">+</button>
+                <button onclick="agregarNumero(0)" class="col-2">0</button>
+                <button onclick="agregarPunto()">.</button>
+                <button onclick="cakcularResultado()">=</button>
             </div>
         </div>
     </section>
